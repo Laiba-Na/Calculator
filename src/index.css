@@ -1,10 +1,54 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 
 
+@import "tailwindcss";
 
-  
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/* tailwind customization*/
+
+
+.Main
+{
+  --color-First: #0C090D;
+  --color-Second: #E01A4F;
+  --color-Third: #F15946;
+
+
 }
+
+
+.dark
+{
+  --color-First: #1E1E24;
+  --color-Second: #fff;
+  --color-Third: #cbff4d;
+}
+
+
+.Purple
+{
+  --color-First: #EFE9AE;
+  --color-Second: #808080;
+  --color-Third: #EFB9CB;
+
+}
+
+.Red
+{
+  --color-First: #130303;
+  --color-Second: #fff;
+  --color-Third: #FF6F61;
+
+}
+
+
+
+@theme {
+   
+   
+    --color-First: rgba(var(--color-First));
+    --color-Second: rgba(var(--color-Second));
+    --color-Third: rgba(var(--color-Third));
+    
+  }
+
 
