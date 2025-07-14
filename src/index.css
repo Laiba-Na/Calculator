@@ -4,12 +4,71 @@
 
 
 /* tailwind customization*/
+@import "tailwindcss";
 
+
+
+
+
+/* tailwind customization*/
+
+
+@utility clipimage {
+   
+  clip-path : polygon(0 0, 100% 0%, 100% 100%, 0 83.5%);
+}
+
+
+
+
+
+@font-face {
+  font-family: JetBrains;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/Fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: JetBrains;
+  font-style: Bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./assets/Fonts/JetBrainsMono-Bold.woff2") format("woff2");
+}
+
+
+@font-face {
+  font-family: JetBrains;
+  font-style:ExtraBold;
+  font-weight: 800;
+  font-display: swap;
+  src: url("./assets/Fonts/JetBrainsMono-ExtraBold.woff2") format("woff2");
+}
+
+@font-face  {
+  font-family: Montserrat;
+  
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("./assets/Fonts/Montserrat-Regular.woff2") format("woff2");
+}
+@font-face  {
+  font-family: Montserrat;
+  
+  font-weight: 800;
+  font-style: ExtraBold;
+  font-display: swap;
+  src: url("./assets/Fonts/Montserrat-ExtraBold.woff2") format("woff2");
+}
 
 .Main
 {
   --color-First: #0C090D;
   --color-Second: #E01A4F;
+  --color-Fourth: rgb(209, 19, 48);
   --color-Third: #F15946;
 
 
@@ -48,6 +107,9 @@
     --color-First: rgba(var(--color-First));
     --color-Second: rgba(var(--color-Second));
     --color-Third: rgba(var(--color-Third));
+    --color-Fourth: rgba(var(--color-Fourth));
+    --font-jetbrains:JetBrains;
+    --font-Montserrat:Montserrat;
     
   }
 
