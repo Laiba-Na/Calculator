@@ -1,6 +1,11 @@
-import React from 'react'
+import DigitButton from "./DigitButton"
 
-const Buttons = () => {
+interface Props
+{
+  dispatch: React.Dispatch<any>
+}
+
+const Buttons = ({dispatch} :Props) => {
   return (
     <div className='row-span-8 row-start-3 grid grid-cols-4 grid-rows-5 gap-1 font-jetbrains font-bold text-2xl w-full h-full place-items-center '>
 
@@ -8,21 +13,21 @@ const Buttons = () => {
         <button className='w-full h-full bg-Fourth text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5'>DEL</button>
         <button className='w-full h-full bg-Second text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5'>√</button>
         <button className='w-full h-full bg-Second text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5'>+</button>
-        <button className='w-full h-full bg-white/10 text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5'>1</button>
-        <button className='w-full h-full bg-white/10 text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5'>2</button>
-        <button className='w-full h-full bg-white/10 text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5'>3</button>
+        <DigitButton digit="1" dispatch={dispatch} />
+        <DigitButton digit="2" dispatch={dispatch} />
+        <DigitButton digit="3" dispatch={dispatch} />
         <button className='w-full h-full bg-Second text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5'>-</button>
-        <button className='w-full h-full bg-white/10 text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5'>4</button>
-        <button className='w-full h-full bg-white/10 text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5'>5</button>
-        <button className='w-full h-full bg-white/10 text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5'>6</button>
+        <DigitButton digit="4" dispatch={dispatch} />
+        <DigitButton digit="5" dispatch={dispatch} />
+        <DigitButton digit="6" dispatch={dispatch} />
         <button className='w-full h-full bg-Second text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5'>*</button>
-        <button className='w-full h-full bg-white/10 text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5'>7</button>
-        <button className='w-full h-full bg-white/10 text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5'>8</button>
-        <button className='w-full h-full bg-white/10 text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5'>9</button>
+        <DigitButton digit="7" dispatch={dispatch} />
+        <DigitButton digit="8" dispatch={dispatch} />
+        <DigitButton digit="9" dispatch={dispatch} />
         <button className='w-full h-full bg-Second text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5'>/</button>
-        <button className='w-full h-full bg-white/10 text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5 rounded-bl-md'>.</button>
-        <button className='w-full h-full bg-white/10 text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5 col-span-2'>0</button>
-        <button className='w-full h-full bg-Second text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5 rounded-br-md'>=</button>
+        <DigitButton  digit="." dispatch={dispatch} />
+        <DigitButton digit="0" dispatch={dispatch} />
+        <button className='w-full h-full bg-Second text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5 rounded-br-md col-span-2'>=</button>
        
         
     </div>
