@@ -1,8 +1,8 @@
-import {ACTIONS} from './ACTIONS';
+import { ACTIONS } from "./InnerBody"
 
 interface Prop
 {
-    dispatch : React.Dispatch<any>
+    dispatch : React.Dispatch<{type: string, payload?: any}>
     digit: string
 }
 

@@ -1,14 +1,13 @@
-import { useReducer } from "react";
-import Buttons from "./components/Buttons"
+
 import CalculatorBaseCard from "./components/CalculatorBaseCard"
 import Navbar from "./components/Navbar"
-import Resultbar from "./components/Resultbar"
-import { reducer } from "./components/CalculatorFuntion";
+
+import InnerBody from "./components/InnerBody";
 
 
 function App() {
 
-  const [{currentOperand , previousOperand , operation}, dispatch] = useReducer(reducer , {});
+
   
 
   return (
@@ -16,8 +15,7 @@ function App() {
     <div className=" Main w-full">
       <Navbar/>
       <CalculatorBaseCard>
-        <Resultbar currentOperand={currentOperand} previousOperand={previousOperand}  operation={operation} />
-        <Buttons  dispatch={dispatch}/>
+        <InnerBody/>
       </CalculatorBaseCard>
     </div>
     
