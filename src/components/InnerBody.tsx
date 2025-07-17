@@ -193,11 +193,11 @@ const InnerBody = () => {
 
 
       <div className='row-span-2 w-full h-full mb-2 bg-black rounded-t-md flex flex-col justify-around font-jetbrains text-white p-2 overflow-hidden'>
-        <div className="  h-full text-xs break-words ">{previousOperand} {operation}</div>
-        <div className="  h-full text-xl font-bold break-words">{formatOperand(currentOperand)}</div>
+        <div className="  h-full text-xs 2xl:text-3xl xl:text-xl max-sm:text-[10px] break-words ">{previousOperand} {operation}</div>
+        <div className="  h-full text-xl 2xl:text-5xl xl:text-3xl max-sm:text-sm font-bold break-words">{formatOperand(currentOperand)}</div>
     </div>
     
-    <div className='row-span-8 row-start-3 grid grid-cols-4 grid-rows-5 gap-1 font-jetbrains font-bold text-2xl w-full h-full place-items-center '>
+    <div className='row-span-8 row-start-3 grid grid-cols-4 grid-rows-5 gap-1 font-jetbrains font-bold text-2xl 2xl:text-5xl xl:text-3xl max-sm:text-sm w-full h-full place-items-center '>
         <button className='w-full h-full bg-Fourth text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5' onClick={()=>dispatch({type: ACTIONS.CLEAR})}>AC</button>
         <button className='w-full h-full bg-Fourth text-white shadow-sm hover:bg-gradient-to-bl from-Second/10 via-Third/10 to-Fourth/5' onClick={()=>dispatch({type: ACTIONS.DELETE_DIGIT})} >DEL</button>
         <OperationButton operation="√" dispatch={dispatch} />
