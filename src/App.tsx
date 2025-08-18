@@ -1,25 +1,17 @@
-
-import CalculatorBaseCard from "./components/CalculatorBaseCard"
-import Navbar from "./components/Navbar"
+import CalculatorBaseCard from "./components/CalculatorBaseCard";
+import Navbar from "./components/Navbar";
 
 import InnerBody from "./components/InnerBody";
 
-
 function App() {
-
-
-  
-
   return (
-    
     <div className=" Main w-full">
-      <Navbar/>
+      <Navbar />
       <CalculatorBaseCard>
-        <InnerBody/>
+        <InnerBody />
       </CalculatorBaseCard>
     </div>
-    
-  )
+  );
 }
 
-export default App
+export default App;
