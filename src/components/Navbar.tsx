@@ -12,12 +12,6 @@ const Navbar = () => {
         <a href="https://github.com/Laiba-Na" target="_blank">
           <FaGithub />
         </a>
-        <a>
-          <FaLinkedin
-            href="https://www.linkedin.com/in/laiba-nazir-011b132b7"
-            target="_blank"
-          />
-        </a>
       </div>
     </div>
   );
