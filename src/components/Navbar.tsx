@@ -9,8 +9,15 @@ const Navbar = () => {
         CALCULATOR
       </h1>
       <div className="flex items-center text-First text-2xl 2xl:text-6xl xl:text-4xl cursor-pointer hover:text-Second transition-colors duration-300 gap-x-3 ">
-        <FaGithub />
-        <FaLinkedin />
+        <a href="https://github.com/Laiba-Na" target="_blank">
+          <FaGithub />
+        </a>
+        <a>
+          <FaLinkedin
+            href="https://www.linkedin.com/in/laiba-nazir-011b132b7"
+            target="_blank"
+          />
+        </a>
       </div>
     </div>
   );
